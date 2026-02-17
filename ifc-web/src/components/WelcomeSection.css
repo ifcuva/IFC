@@ -1,0 +1,117 @@
+.welcome {
+  padding: 3rem 1.5rem 4rem;
+  background: linear-gradient(180deg, #fff 0%, #f8f9fc 100%);
+}
+
+.welcome__inner {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(35, 45, 75, 0.06);
+  box-shadow: 0 4px 24px rgba(35, 45, 75, 0.04);
+}
+
+.welcome__heading {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.5rem, 3vw, 1.85rem);
+  font-weight: 700;
+  color: #232d4b;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.welcome__greeting {
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+  color: #232d4b;
+}
+
+.welcome__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.welcome__block {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #3d4556;
+}
+
+.welcome__signoff {
+  margin: 2.5rem 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.welcome__signoff-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid rgba(35, 45, 75, 0.1);
+  flex-shrink: 0;
+}
+
+.welcome__signoff-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.welcome__signoff-intro {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #5c6478;
+  font-style: italic;
+}
+
+.welcome__signoff-name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #232d4b;
+}
+
+.welcome__signoff-title {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #5c6478;
+  font-weight: 500;
+}
+
+.welcome__archives {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #5c6478;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(35, 45, 75, 0.08);
+}
+
+.welcome__archives a {
+  color: #232d4b;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #e57200;
+  transition: color 0.2s;
+}
+
+.welcome__archives a:hover {
+  color: #e57200;
+}
+
+@media (max-width: 640px) {
+  .welcome__inner {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .welcome__signoff-photo {
+    width: 64px;
+    height: 64px;
+  }
+}

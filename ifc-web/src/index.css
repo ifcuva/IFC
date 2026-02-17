@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+/* UVA IFC – Base theme (UVA Blue #232D4B, UVA Orange #E57200) */
+:root {
+  --uva-blue: #232d4b;
+  --uva-blue-muted: #3d4556;
+  --uva-orange: #e57200;
+  --uva-orange-light: #f9dcbf;
+  --uva-blue-25: #c8cbd2;
+  --text: #232d4b;
+  --text-muted: #5c6478;
+  --bg: #ffffff;
+  --bg-subtle: #f8f9fb;
+  font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--uva-blue);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

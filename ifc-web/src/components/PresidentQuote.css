@@ -1,0 +1,100 @@
+.president-quote {
+  width: 100%;
+  padding: 4rem 1.5rem;
+  margin: 0;
+  background-color: #fafbfc;
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(35, 45, 75, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(229, 114, 0, 0.03) 0%, transparent 50%),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 20px,
+      rgba(35, 45, 75, 0.02) 20px,
+      rgba(35, 45, 75, 0.02) 21px
+    );
+}
+
+.president-quote__inner {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.president-quote__photo-wrap {
+  flex-shrink: 0;
+}
+
+.president-quote__photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 4px solid rgba(35, 45, 75, 0.1);
+  box-shadow: 0 12px 32px rgba(35, 45, 75, 0.12);
+}
+
+.president-quote__body {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.president-quote__text {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  line-height: 1.7;
+  color: #232d4b;
+  font-style: italic;
+}
+
+.president-quote__cite {
+  display: block;
+  font-style: normal;
+}
+
+.president-quote__cite a {
+  color: #232d4b;
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.president-quote__cite a:hover {
+  color: #e57200;
+}
+
+.president-quote__title {
+  display: block;
+  font-size: 1rem;
+  color: #5c6478;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 640px) {
+  .president-quote {
+    padding: 3rem 1rem;
+  }
+
+  .president-quote__inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.75rem;
+  }
+
+  .president-quote__body {
+    text-align: center;
+  }
+
+  .president-quote__photo {
+    width: 140px;
+    height: 140px;
+  }
+}

@@ -1,0 +1,8 @@
+/* App-level layout */
+main {
+  min-height: 100vh;
+}
+
+.home-content {
+  background: #fff;
+}
