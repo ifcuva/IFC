@@ -25,6 +25,11 @@ export const welcomeBlocks = [
   `We welcome you to become part of a community of leaders, athletes, activists, and scholars who have shaped the University of Virginia since 1851. Being a part of Greek life affords you an opportunity to enhance your university experience as well as be a part of a system that empowers you to better yourself and make a lasting impact on the community.`,
 ];
 
+export const mission = {
+  statement:
+    'Committed to fostering brotherhood, leadership, and academic excellence, the Inter-Fraternity Council at the University of Virginia provides vital support and resources to our fraternity chapters. Through collaboration with ISC, MGC, and NPHC, we cultivate a culture of integrity, service, and community engagement—empowering our members to thrive personally and professionally and to contribute to a legacy that has shaped UVA since 1851.',
+};
+
 export const publicReleasesLink = {
   label: 'Public Releases',
   href: '/governing-board/public-releases',
@@ -34,5 +39,5 @@ export const disclaimer =
   'Although this organization has members who are University of Virginia students and may have University employees associated or engaged in its activities and affairs, the organization is not a part of or an agency of the University. It is a separate and independent organization which is responsible for and manages its own activities and affairs. The University does not direct, supervise or control the organization and is not responsible for the organization\'s contracts, acts or omissions.';
 
 export const footer = {
-  copyright: '© 2021 Inter-Fraternity Council at the University of Virginia',
+  copyright: '© 2026 Inter-Fraternity Council at the University of Virginia',
 };

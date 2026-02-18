@@ -1,0 +1,39 @@
+.not-found-page {
+  min-height: 100vh;
+  padding: 6rem 1.5rem 4rem;
+  background: #f8f9fc;
+}
+
+.not-found-page__inner {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.not-found-page__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #232d4b;
+}
+
+.not-found-page__text {
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  color: #5c6478;
+}
+
+.not-found-page__link {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  background: #232d4b;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.not-found-page__link:hover {
+  background: #e57200;
+}

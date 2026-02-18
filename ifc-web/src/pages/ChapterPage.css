@@ -1,0 +1,186 @@
+.chapter-page {
+  min-height: 100vh;
+  padding: 5rem 1.5rem 4rem;
+  background: #ebeef2;
+}
+
+.chapter-page__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  align-items: center;
+}
+
+.chapter-page__photo-wrap {
+  min-width: 0;
+}
+
+.chapter-page__photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 12px;
+}
+
+.chapter-page__header {
+  min-width: 0;
+  padding: 0.5rem 0;
+}
+
+.chapter-page__breadcrumb {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #5c6478;
+}
+
+.chapter-page__breadcrumb a {
+  color: #232d4b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.chapter-page__breadcrumb a:hover {
+  color: #e57200;
+}
+
+.chapter-page__breadcrumb-sep {
+  margin: 0 0.4rem;
+  opacity: 0.6;
+}
+
+.chapter-page__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  color: #232d4b;
+  letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.chapter-page__title-greek {
+  font-size: 1em;
+  letter-spacing: 0.02em;
+}
+
+.chapter-page__title-name {
+  font-size: 0.6em;
+  font-weight: 600;
+  color: #232d4b;
+}
+
+.chapter-page__subtitle {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #5c6478;
+}
+
+.chapter-page__details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #232d4b;
+}
+
+.chapter-page__details li {
+  margin-bottom: 0.35rem;
+}
+
+.chapter-page__details strong {
+  font-weight: 600;
+  color: #232d4b;
+}
+
+.chapter-page__detail-link {
+  color: #232d4b;
+  text-decoration: none;
+  border-bottom: 1px solid #e57200;
+  transition: color 0.2s;
+}
+
+.chapter-page__detail-link:hover {
+  color: #e57200;
+}
+
+.chapter-page__body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.chapter-page__para {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #000;
+}
+
+.chapter-page__links {
+  margin: 1.5rem 0 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.chapter-page__link {
+  color: #232d4b;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #e57200;
+  transition: color 0.2s;
+}
+
+.chapter-page__link:hover {
+  color: #e57200;
+}
+
+.chapter-page__placeholder {
+  margin: 0 0 2rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #3d4556;
+}
+
+.chapter-page__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.chapter-page__block h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #232d4b;
+}
+
+.chapter-page__block p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #5c6478;
+}
+
+@media (max-width: 900px) {
+  .chapter-page__top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .chapter-page__photo-wrap {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .chapter-page__photo {
+    aspect-ratio: 16 / 10;
+  }
+}

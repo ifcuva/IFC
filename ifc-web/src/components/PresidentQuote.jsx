@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { presidentQuote, president } from '../data/home';
 import './PresidentQuote.css';
 
-export default function PresidentQuote() {
+export default function PresidentQuote({ onReadStatement }) {
   return (
     <motion.section
       className="president-quote"
@@ -27,6 +27,15 @@ export default function PresidentQuote() {
             <a href={president.href}>{president.name}</a>
             <span className="president-quote__title">{president.title}</span>
           </cite>
+          {onReadStatement && (
+            <button
+              type="button"
+              className="president-quote__read-statement"
+              onClick={onReadStatement}
+            >
+              Read the statement from the president
+            </button>
+          )}
         </div>
       </div>
     </motion.section>

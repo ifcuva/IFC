@@ -15,6 +15,11 @@ export default function Footer() {
         <p className="footer__disclaimer-text">{disclaimer}</p>
       </motion.div>
       <div className="footer__bottom">
+        <img
+          src="/images/uvarotundaorange.png"
+          alt="University of Virginia"
+          className="footer__logo"
+        />
         <p className="footer__copyright">{footer.copyright}</p>
       </div>
     </footer>

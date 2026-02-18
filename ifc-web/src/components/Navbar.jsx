@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { navItems } from '../data/nav';
 import './Navbar.css';
 
 export default function Navbar() {
+  const { pathname } = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -14,15 +16,16 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const isOpaque = scrolled || mobileOpen;
+  const isHome = pathname === '/';
+  const isOpaque = !isHome || scrolled || mobileOpen;
 
   return (
     <header className={`navbar ${isOpaque ? 'navbar--solid' : ''}`}>
       <div className="navbar__inner">
-        <a href="/" className="navbar__brand" aria-label="IFC at UVA – Home">
+        <Link to="/" className="navbar__brand" aria-label="IFC at UVA – Home">
           <img src="/images/logo.png" alt="" className="navbar__logo" />
           <span className="navbar__brand-text">IFC at UVA</span>
-        </a>
+        </Link>
 
         <nav className="navbar__nav">
           {navItems.map((item) => (
@@ -34,14 +37,14 @@ export default function Navbar() {
             >
               {item.children ? (
                 <>
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="navbar__link navbar__link--dropdown"
                     aria-expanded={openDropdown === item.label}
                     aria-haspopup="true"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                   <AnimatePresence>
                     {openDropdown === item.label && (
                       <motion.ul
@@ -53,9 +56,9 @@ export default function Navbar() {
                       >
                         {item.children.map((child) => (
                           <li key={child.label}>
-                            <a href={child.href} className="navbar__dropdown-link">
+                            <Link to={child.href} className="navbar__dropdown-link">
                               {child.label}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </motion.ul>
@@ -63,9 +66,9 @@ export default function Navbar() {
                   </AnimatePresence>
                 </>
               ) : (
-                <a href={item.href} className="navbar__link">
+                <Link to={item.href} className="navbar__link">
                   {item.label}
-                </a>
+                </Link>
               )}
             </div>
           ))}
@@ -94,22 +97,22 @@ export default function Navbar() {
           >
             {navItems.map((item) => (
               <div key={item.label} className="navbar__mobile-item">
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="navbar__mobile-link"
                   onClick={() => setMobileOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
                 {item.children?.map((child) => (
-                  <a
+                  <Link
                     key={child.label}
-                    href={child.href}
+                    to={child.href}
                     className="navbar__mobile-sublink"
                     onClick={() => setMobileOpen(false)}
                   >
                     {child.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             ))}

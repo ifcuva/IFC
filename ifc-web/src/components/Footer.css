@@ -26,7 +26,18 @@
 .footer__bottom {
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.footer__logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.95;
 }
 
 .footer__copyright {
