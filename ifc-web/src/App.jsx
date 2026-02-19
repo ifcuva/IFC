@@ -1,8 +1,8 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ChaptersPage from './pages/ChaptersPage';
 import ChapterPage from './pages/ChapterPage';
-import RecruitmentFaqPage from './pages/RecruitmentFaqPage';
+import RecruitmentPage from './pages/RecruitmentPage';
 import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
 
@@ -12,7 +12,9 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/chapters" element={<ChaptersPage />} />
       <Route path="/chapters/:slug" element={<ChapterPage />} />
-      <Route path="/recruitment/faqs" element={<RecruitmentFaqPage />} />
+      <Route path="/recruitment" element={<RecruitmentPage />} />
+      <Route path="/recruitment/faqs" element={<Navigate to="/recruitment" replace />} />
+      <Route path="/recruitment/spring-2026" element={<Navigate to="/recruitment" replace />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

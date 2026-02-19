@@ -8,10 +8,6 @@ export const navItems = [
   {
     label: 'Recruitment',
     href: '/recruitment',
-    children: [
-      { label: 'Spring 2026', href: '/recruitment/spring-2026' },
-      { label: 'FAQs', href: '/recruitment/faqs' },
-    ],
   },
   {
     label: 'IFC-JC',
