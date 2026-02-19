@@ -11,7 +11,7 @@ export const presidentQuote =
   'UVA fraternity life shapes leaders, builds enduring connections, and invites each of us to contribute to a legacy larger than ourselves. The opportunities that arise from joining this historical community are abundant.';
 
 export const president = {
-  name: 'Ryan Phelan',
+  name: 'Alex Peskin',
   title: 'President of the IFC',
   href: '/ifc-governing-board',
 };

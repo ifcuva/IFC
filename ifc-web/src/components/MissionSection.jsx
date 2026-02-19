@@ -14,7 +14,7 @@ export default function MissionSection() {
       <div className="mission__inner">
         <h2 className="mission__title">
           <span className="mission__line" aria-hidden="true" />
-          <span className="mission__text">Our Mission</span>
+          <span className="mission__text">Our Goal</span>
           <span className="mission__line" aria-hidden="true" />
         </h2>
         <p className="mission__statement">{mission.statement}</p>
