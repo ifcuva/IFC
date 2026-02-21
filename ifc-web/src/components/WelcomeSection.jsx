@@ -48,9 +48,6 @@ export default function WelcomeSection({ isOpen, onClose }) {
             >
               Close
             </button>
-            <motion.h2 className="welcome__heading" variants={item}>
-              Welcome to the Inter-Fraternity Council at the University of Virginia
-            </motion.h2>
             <motion.p className="welcome__greeting" variants={item}>
               <strong>Gentlemen of the University of Virginia,</strong>
             </motion.p>
