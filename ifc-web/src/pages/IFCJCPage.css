@@ -1,0 +1,157 @@
+.ifcjc-page {
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  background: linear-gradient(180deg, #f2f4f8 0%, #fff 15%, #fff 85%, #f5f7fa 100%);
+}
+
+/* Hero – matches recruitment */
+.ifcjc-page__hero {
+  min-height: 42vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #232d4b 0%, #1e2740 50%, #1a2240 100%);
+  padding: 6rem 1.5rem 5rem;
+}
+
+.ifcjc-page__hero-title {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Inner – wider for single card */
+.ifcjc-page__inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  margin-top: -2rem;
+}
+
+/* Single long card with section dividers */
+.ifcjc-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0 8px 32px rgba(35, 45, 75, 0.12);
+  border: 1px solid rgba(35, 45, 75, 0.08);
+  overflow: hidden;
+}
+
+.ifcjc-card__section {
+  padding: 2rem 2.5rem;
+  border-bottom: 1px solid rgba(35, 45, 75, 0.1);
+}
+
+.ifcjc-card__section:last-child {
+  border-bottom: none;
+}
+
+.ifcjc-card__section--contact {
+  padding-top: 1.5rem;
+}
+
+.ifcjc-card__intro {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #232d4b;
+  font-weight: 500;
+}
+
+.ifcjc-card__section p {
+  margin: 0 0 1.25rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #1a1a1a;
+}
+
+.ifcjc-card__section p:last-child {
+  margin-bottom: 0;
+}
+
+.ifcjc-card__link {
+  color: #232d4b;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: color 0.2s;
+}
+
+.ifcjc-card__link:hover {
+  color: #e57200;
+}
+
+.ifcjc-card__link--complaint {
+  color: #e57200;
+  text-decoration: underline;
+}
+
+.ifcjc-card__link--complaint:hover {
+  color: #c96300;
+}
+
+.ifcjc-card__heading {
+  margin: 0 0 1rem;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #232d4b;
+}
+
+.ifcjc-card__doc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ifcjc-card__doc-link {
+  display: inline-block;
+  font-size: 1rem;
+  color: #232d4b;
+  text-decoration: none;
+  padding: 0.4rem 0;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.ifcjc-card__doc-link:hover {
+  color: #e57200;
+  background: rgba(229, 114, 0, 0.06);
+}
+
+.ifcjc-card__contact {
+  font-size: 1rem;
+  color: #1a1a1a;
+}
+
+.ifcjc-card__contact strong {
+  color: #232d4b;
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .ifcjc-page__hero {
+    min-height: 35vh;
+    padding: 5rem 1rem 4rem;
+  }
+
+  .ifcjc-page__inner {
+    margin-top: -1.5rem;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .ifcjc-card__section {
+    padding: 1.5rem 1.25rem;
+  }
+}

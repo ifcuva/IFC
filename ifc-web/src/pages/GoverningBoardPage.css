@@ -1,0 +1,137 @@
+.governing-board-page {
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  background: linear-gradient(180deg, #f2f4f8 0%, #fff 15%, #fff 85%, #f5f7fa 100%);
+}
+
+.governing-board-page__hero {
+  min-height: 38vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #232d4b 0%, #1e2740 50%, #1a2240 100%);
+  padding: 6rem 1.5rem 5rem;
+}
+
+.governing-board-page__hero-title {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.governing-board-page__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0;
+}
+
+/* 2 cards per row */
+.governing-board-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.25rem 2.5rem;
+}
+
+.governing-board-card {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(35, 45, 75, 0.08);
+  border: 1px solid rgba(35, 45, 75, 0.08);
+}
+
+.governing-board-card__photo-wrap {
+  flex-shrink: 0;
+  width: 200px;
+  min-height: 240px;
+}
+
+.governing-board-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  display: block;
+}
+
+.governing-board-card__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.75rem 2rem;
+  min-width: 0;
+}
+
+.governing-board-card__name {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.governing-board-card__position {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.governing-board-card__email,
+.governing-board-card__phone {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 20.6px;
+  color: #232d4b;
+  text-decoration: none;
+  margin-top: 0.25rem;
+  transition: color 0.2s;
+}
+
+.governing-board-card__email:hover,
+.governing-board-card__phone:hover {
+  color: #e57200;
+}
+
+.governing-board-card__phone {
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 640px) {
+  .governing-board-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .governing-board-card__photo-wrap {
+    width: 160px;
+    min-height: 200px;
+  }
+
+  .governing-board-card__info {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .governing-board-card__name {
+    font-size: 1.2rem;
+  }
+
+  .governing-board-card__position {
+    font-size: 1rem;
+  }
+
+  .governing-board-card__email,
+  .governing-board-card__phone {
+    font-size: 0.85rem;
+  }
+}

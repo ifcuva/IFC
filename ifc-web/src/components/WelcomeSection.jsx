@@ -60,7 +60,7 @@ export default function WelcomeSection({ isOpen, onClose }) {
             </div>
             <motion.div className="welcome__signoff" variants={item}>
               <img
-                src="/images/pesk.png"
+                src="/images/headshots/pesk.png"
                 alt=""
                 className="welcome__signoff-photo"
               />

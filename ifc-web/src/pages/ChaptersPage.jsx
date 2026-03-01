@@ -38,7 +38,7 @@ export default function ChaptersPage() {
               <span className="chapters-page__line" aria-hidden="true" />
             </h1>
             <p className="chapters-page__intro">
-              Explore the IFC's 24 chapters
+              Explore the IFC's 25 chapters
             </p>
           </motion.header>
 

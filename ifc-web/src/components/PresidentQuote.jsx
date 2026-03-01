@@ -14,7 +14,7 @@ export default function PresidentQuote({ onReadStatement }) {
       <div className="president-quote__inner">
         <div className="president-quote__photo-wrap">
           <img
-            src="/images/pesk.png"
+            src="/images/headshots/pesk.png"
             alt=""
             className="president-quote__photo"
           />

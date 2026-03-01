@@ -12,10 +12,6 @@ export const navItems = [
   {
     label: 'IFC-JC',
     href: '/ifc-jc',
-    children: [
-      { label: 'Standards Boards', href: '/ifc-jc/standards-boards' },
-      { label: 'Complaint Form', href: '/ifc-jc/complaint-form' },
-    ],
   },
   {
     label: 'Governing Board',
