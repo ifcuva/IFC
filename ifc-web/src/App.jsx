@@ -6,6 +6,7 @@ import ChapterPage from './pages/ChapterPage';
 import RecruitmentPage from './pages/RecruitmentPage';
 import IFCJCPage from './pages/IFCJCPage';
 import GoverningBoardPage from './pages/GoverningBoardPage';
+import ScholarshipsPage from './pages/ScholarshipsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
 
@@ -30,6 +31,10 @@ export default function App() {
       <Route path="/recruitment/spring-2026" element={<Navigate to="/recruitment" replace />} />
       <Route path="/ifc-jc" element={<IFCJCPage />} />
       <Route path="/governing-board" element={<GoverningBoardPage />} />
+      <Route path="/scholarships" element={<ScholarshipsPage />} />
+      <Route path="/scholarships/scholarship" element={<Navigate to="/scholarships#scholarship" replace />} />
+      <Route path="/scholarships/quentin-alcorn" element={<Navigate to="/scholarships#quentin-alcorn" replace />} />
+      <Route path="/scholarships/funding-requests" element={<Navigate to="/scholarships#funding-requests" replace />} />
       <Route path="/ifc-jc/standards-boards" element={<Navigate to="/ifc-jc" replace />} />
       <Route path="/ifc-jc/complaint-form" element={<Navigate to="/ifc-jc" replace />} />
       <Route path="*" element={<NotFoundPage />} />

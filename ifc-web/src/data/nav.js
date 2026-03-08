@@ -24,9 +24,9 @@ export const navItems = [
     label: 'Scholarships and Sponsorships',
     href: '/scholarships',
     children: [
-      { label: 'Scholarship', href: '/scholarships/scholarship' },
-      { label: 'Quentin Alcorn Memorial Scholarship', href: '/scholarships/quentin-alcorn' },
-      { label: 'Funding Requests', href: '/scholarships/funding-requests' },
+      { label: 'Scholarship', href: '/scholarships#scholarship' },
+      { label: 'Quentin Alcorn Memorial Scholarship', href: '/scholarships#quentin-alcorn' },
+      { label: 'Funding Requests', href: '/scholarships#funding-requests' },
     ],
   },
 ];
