@@ -2,13 +2,23 @@ import { motion } from 'framer-motion';
 import { hero as heroData } from '../data/home';
 import './Hero.css';
 
-const heroImage = '/images/rotundaAbove.png';
+const heroVideo = '/videos/ifc-hero-2.mp4';
+const heroPoster = '/images/rotundaAbove.png';
 
 export default function Hero() {
   return (
     <section className="hero" aria-label="Welcome">
       <div className="hero__bg">
-        <img src={heroImage} alt="" className="hero__img" />
+        <video
+          className="hero__video"
+          src={heroVideo}
+          poster={heroPoster}
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden
+        />
         <div className="hero__overlay" aria-hidden="true" />
       </div>
       <div className="hero__content">
@@ -28,15 +38,6 @@ export default function Hero() {
         >
           {heroData.subtitle}
         </motion.p>
-        <motion.div
-          className="hero__scroll-hint"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.6 }}
-        >
-          <span className="hero__scroll-text">Scroll</span>
-          <span className="hero__scroll-line" />
-        </motion.div>
       </div>
     </section>
   );

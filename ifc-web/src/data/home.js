@@ -4,7 +4,7 @@ export const hero = {
 };
 
 export const quickLinks = [
-  { label: 'Spring Semester Social Guidelines', href: '/public-releases' },
+  { label: 'Spring Semester Social Guidelines', href: '/governing-board/public-releases' },
 ];
 
 export const presidentQuote =

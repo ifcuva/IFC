@@ -29,7 +29,7 @@ export default function RecruitmentPage() {
             transition={{ duration: 0.4, delay: 0.15 }}
           >
             <p className="recruitment-page__bubble-text">
-              2026 recruitment has ended. Spring 2027 details will be posted in the fall.
+              2026 recruitment has ended. Spring 2027 details will be posted soon.
             </p>
           </motion.div>
 

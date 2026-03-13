@@ -19,7 +19,7 @@
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   color: #fff;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.4px;
   text-align: center;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
