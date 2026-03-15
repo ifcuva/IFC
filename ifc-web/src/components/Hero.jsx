@@ -3,7 +3,7 @@ import { hero as heroData } from '../data/home';
 import './Hero.css';
 
 const heroVideo = '/videos/ifc-hero-2.mp4';
-const heroPoster = '/images/rotundaAbove.png';
+const heroPoster = '/images/rotundaAbove2.png';
 
 export default function Hero() {
   return (
