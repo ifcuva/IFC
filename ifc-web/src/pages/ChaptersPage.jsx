@@ -15,7 +15,13 @@ export default function ChaptersPage() {
     fetch('/chapters.json')
       .then((res) => res.json())
       .then((data) => {
-        setChapters(Array.isArray(data) ? data : []);
+        const list = Array.isArray(data) ? data : [];
+        list.sort((a, b) => {
+          const greekA = getGreekForChapter(a);
+          const greekB = getGreekForChapter(b);
+          return greekA.localeCompare(greekB, 'el');
+        });
+        setChapters(list);
         setLoading(false);
       })
       .catch(() => setLoading(false));
