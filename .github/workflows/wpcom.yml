@@ -1,0 +1,48 @@
+# WordPress.com GitHub Deployments – Advanced mode
+# Builds ifc-web (Vite/React) and deploys the built output to virginiaifc.com
+# See: https://wordpress.com/support/github-deployments/workflow-recipes/
+
+name: Deploy to WordPress.com
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  Deploy-IFC-Web:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: ifc-web/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ifc-web
+        run: npm ci
+
+      - name: Build
+        working-directory: ifc-web
+        run: npm run build
+
+      # Artifact root must be the built site (index.html at top level) so
+      # WordPress.com extracts it correctly into the destination directory.
+      - name: Prepare deployment artifact
+        run: |
+          mkdir -p deploy
+          cp -r ifc-web/dist/* deploy/
+
+      - name: Upload the artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wpcom
+          path: deploy
+          retention-days: 1
