@@ -63,6 +63,8 @@ export default function WelcomeSection({ isOpen, onClose }) {
                 src="/images/headshots/pesk.png"
                 alt=""
                 className="welcome__signoff-photo"
+                loading="lazy"
+                decoding="async"
               />
               <div className="welcome__signoff-text">
                 <p className="welcome__signoff-intro">Sincerely,</p>

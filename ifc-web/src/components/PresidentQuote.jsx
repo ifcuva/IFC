@@ -17,6 +17,8 @@ export default function PresidentQuote({ onReadStatement }) {
             src="/images/headshots/pesk.png"
             alt=""
             className="president-quote__photo"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div className="president-quote__body">

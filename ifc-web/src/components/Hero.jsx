@@ -13,6 +13,7 @@ export default function Hero() {
           className="hero__video"
           src={heroVideo}
           poster={heroPoster}
+          preload="metadata"
           autoPlay
           muted
           loop

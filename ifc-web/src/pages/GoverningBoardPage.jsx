@@ -33,6 +33,8 @@ export default function GoverningBoardPage() {
                     src={member.image}
                     alt=""
                     className="governing-board-card__photo"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="governing-board-card__info">

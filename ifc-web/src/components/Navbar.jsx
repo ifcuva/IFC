@@ -23,7 +23,7 @@ export default function Navbar() {
     <header className={`navbar ${isOpaque ? 'navbar--solid' : ''}`}>
       <div className="navbar__inner">
         <Link to="/" className="navbar__brand" aria-label="IFC at UVA – Home">
-          <img src="/images/logo.png" alt="" className="navbar__logo" />
+          <img src="/images/logo.png" alt="" className="navbar__logo" decoding="async" fetchPriority="high" />
           <span className="navbar__brand-text">IFC at UVA</span>
         </Link>
 

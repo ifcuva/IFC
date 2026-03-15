@@ -22,7 +22,7 @@ export default function ChapterPage() {
       <main className="chapter-page">
         <section className="chapter-page__top">
           <div className="chapter-page__photo-wrap">
-            <img src={image} alt="" className="chapter-page__photo" />
+            <img src={image} alt="" className="chapter-page__photo" loading="lazy" decoding="async" />
           </div>
           <div className="chapter-page__header">
             <motion.nav

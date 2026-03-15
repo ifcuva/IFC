@@ -19,6 +19,8 @@ export default function Footer() {
           src="/images/uvarotundaorange.png"
           alt="University of Virginia"
           className="footer__logo"
+          loading="lazy"
+          decoding="async"
         />
         <p className="footer__copyright">{footer.copyright}</p>
       </div>
