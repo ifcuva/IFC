@@ -5,9 +5,9 @@ import './IFCJCPage.css';
 
 const DOCUMENTS = [
   { label: 'Judiciary Committee Standards & Procedures', href: '/ifc-jc/ifcjc_standards.pdf', download: 'ifcjc_standards.pdf' },
-  { label: 'IFC Standards of Conduct', href: '/ifc-jc/ifcjc-standards-of-conduct.pdf', download: 'ifcjc-standards-of-conduct.pdf' },
+  { label: 'IFC Standards of Conduct', href: '/ifc-jc/ifcjc_standards_of_conduct.pdf', download: 'ifcjc_standards_of_conduct.pdf' },
   { label: 'IFC Standards for Parties and Social Events', href: '/ifc-jc/inside_party_standards.pdf', download: 'inside_party_standards.pdf' },
-  { label: 'IFC Rush Regulation', href: '/ifc-jc/ifcjc-rush-regulations1.pdf', download: 'ifcjc-rush-regulations1.pdf' },
+  { label: 'IFC Rush Regulation', href: '/ifc-jc/ifcjc_rush_regulations1.pdf', download: 'ifcjc_rush_regulations1.pdf' },
 ];
 
 export default function IFCJCPage() {
