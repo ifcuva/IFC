@@ -13,7 +13,7 @@ export const presidentQuote =
 export const president = {
   name: 'Alex Peskin',
   title: 'President of the IFC',
-  href: '/ifc-governing-board',
+  href: '/governing-board',
 };
 
 export const welcomeBlocks = [

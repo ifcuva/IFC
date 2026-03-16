@@ -33,6 +33,8 @@ export default function App() {
       <Route path="/ifc-jc" element={<IFCJCPage />} />
       <Route path="/governing-board" element={<GoverningBoardPage />} />
       <Route path="/governing-board/public-releases" element={<PublicReleasesPage />} />
+      <Route path="/ifc-governing-board" element={<Navigate to="/governing-board" replace />} />
+      <Route path="/ifc-governing-board/" element={<Navigate to="/governing-board" replace />} />
       <Route path="/public-releases" element={<Navigate to="/governing-board/public-releases" replace />} />
       <Route path="/scholarships" element={<ScholarshipsPage />} />
       <Route path="/scholarships/scholarship" element={<Navigate to="/scholarships#scholarship" replace />} />
