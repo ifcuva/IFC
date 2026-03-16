@@ -1,8 +1,8 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { slugToName } from '../utils/slugs';
+import { slugToName, getCanonicalChapterSlug } from '../utils/slugs';
 import { getGreekForChapter } from '../data/chapterGreek';
 import { getChapterImage, getChapterContent } from '../data/chapterContent';
 import './ChapterPage.css';
@@ -11,7 +11,13 @@ const DEFAULT_CHAPTER_IMAGE = '/images/rotunda1.png';
 
 export default function ChapterPage() {
   const { slug } = useParams();
-  const name = slug ? slugToName(slug) : 'Chapter';
+  const canonicalSlug = slug ? getCanonicalChapterSlug(slug) : null;
+
+  if (slug && canonicalSlug && canonicalSlug !== slug.toLowerCase().trim()) {
+    return <Navigate to={`/chapters/${canonicalSlug}`} replace />;
+  }
+
+  const name = slug ? slugToName(canonicalSlug || slug) : 'Chapter';
   const greek = getGreekForChapter(name);
   const image = getChapterImage(name) || DEFAULT_CHAPTER_IMAGE;
   const content = getChapterContent(name);
