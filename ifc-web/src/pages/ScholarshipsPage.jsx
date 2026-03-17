@@ -139,11 +139,8 @@ export default function ScholarshipsPage() {
             </ul>
             <p className="scholarships-page__section-text">
               If you would like to apply for funding from the Inter-Fraternity
-              Council, please fill out the IFC funding request form or email{' '}
-              <a href={`mailto:${SCHOLARSHIP_CHAIR.email}`} className="scholarships-page__link">
-                {SCHOLARSHIP_CHAIR.name}
-              </a>
-              , {SCHOLARSHIP_CHAIR.position}.
+              Council, please fill out the IFC funding request form or contact
+              David Gosik, VP Admin.
             </p>
             </section>
           </motion.div>
