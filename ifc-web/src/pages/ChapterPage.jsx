@@ -9,6 +9,27 @@ import './ChapterPage.css';
 
 const DEFAULT_CHAPTER_IMAGE = '/images/rotunda1.png';
 
+function getDetailType(label = '') {
+  const normalized = label.toLowerCase().trim();
+  if (normalized === 'president') return 'president';
+  if (normalized.includes('rush chair')) return 'rushChair';
+  if (normalized.includes('alumni chair') || normalized.includes('alumni relations chair')) {
+    return 'alumniChair';
+  }
+  if (normalized.includes('philanthropy chair')) return 'philanthropyChair';
+  if (normalized === 'philanthropy') return 'philanthropy';
+  if (normalized.includes('chapter size') || normalized.includes('charge size')) return 'chapterSize';
+  if (normalized.includes('date founded')) return 'dateFounded';
+  return null;
+}
+
+function getChapterSizeLabel(originalLabel = '') {
+  const normalized = originalLabel.trim();
+  const match = normalized.match(/as of\s+(.+)$/i);
+  if (match) return `Chapter Size as of ${match[1].trim()}`;
+  return normalized || 'Chapter Size';
+}
+
 export default function ChapterPage() {
   const { slug } = useParams();
   const canonicalSlug = slug ? getCanonicalChapterSlug(slug) : null;
@@ -21,6 +42,39 @@ export default function ChapterPage() {
   const greek = getGreekForChapter(name);
   const image = getChapterImage(name) || DEFAULT_CHAPTER_IMAGE;
   const content = getChapterContent(name);
+  const orderedDetailTypes = [
+    'president',
+    'rushChair',
+    'alumniChair',
+    'philanthropyChair',
+    'philanthropy',
+    'chapterSize',
+    'dateFounded',
+  ];
+  const detailsByType = new Map();
+
+  if (content?.details && content.details.length > 0) {
+    content.details.forEach((item) => {
+      const type = getDetailType(item.label);
+      if (!type || detailsByType.has(type)) return;
+      detailsByType.set(type, item);
+    });
+  }
+
+  const displayDetails = orderedDetailTypes
+    .filter((type) => detailsByType.has(type))
+    .map((type) => {
+      const item = detailsByType.get(type);
+      let displayLabel = item.label;
+
+      if (type === 'rushChair') displayLabel = 'Rush Chair';
+      if (type === 'alumniChair') displayLabel = 'Alumni Chair';
+      if (type === 'philanthropyChair') displayLabel = 'Philanthropy Chair';
+      if (type === 'chapterSize') displayLabel = getChapterSizeLabel(item.label);
+      if (type === 'dateFounded') displayLabel = 'Date Founded at UVA';
+
+      return { ...item, displayLabel };
+    });
 
   return (
     <>
@@ -69,16 +123,16 @@ export default function ChapterPage() {
               </motion.p>
             )}
 
-            {content?.details && content.details.length > 0 && (
+            {displayDetails.length > 0 && (
               <motion.ul
                 className="chapter-page__details"
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.08 }}
               >
-                {content.details.map((item, i) => (
+                {displayDetails.map((item, i) => (
                   <li key={i}>
-                    <strong>{item.label}:</strong>{' '}
+                    <strong>{item.displayLabel}:</strong>{' '}
                     {item.href ? (
                       <a href={item.href} className="chapter-page__detail-link">
                         {item.value}
