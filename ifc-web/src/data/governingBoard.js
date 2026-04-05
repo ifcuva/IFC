@@ -13,10 +13,10 @@ export const governingBoardMembers = [
   { name: 'Francis Knoll', position: 'Leadership and Development Chair', image: '/images/headshots/knoll.png', email: 'wez5bd@virginia.edu', phone: null },
   { name: 'Thomas Lucrezio', position: 'Leadership and Development Chair', image: '/images/headshots/thomaslucrezio.jpg', email: 'czf4zr@virginia.edu', phone: null },
   { name: 'Jackson Sleadd', position: 'Leadership and Development Chair', image: '/images/headshots/sleadd.png', email: 'tdy8vs@virginia.edu', phone: null },
-  { name: 'Pradyumn Jha', position: 'Leadership and Development Chair', image: '/images/headshots/pradyumn.png', email: 'uwq8ys@virginia.edu', phone: null },
+  { name: 'Pradyumn Jha', position: 'Community Service Chair', image: '/images/headshots/pradyumn.png', email: 'uwq8ys@virginia.edu', phone: null },
+  { name: 'Ryan Dadoo', position: 'Community Service Chair', image: '/images/headshots/dadoo.png', email: 'jhg9kf@virginia.edu', phone: null },
   { name: 'Michael Child', position: 'Faculty and Alumni Chair', image: '/images/headshots/child.png', email: 'wsb4tz@virginia.edu', phone: null },
   { name: 'Mitchell Milias', position: 'Chapter Outreach and Administration Chair', image: '/images/headshots/mitchellmilias.png', email: 'hcv4em@virginia.edu', phone: null },
   { name: 'Nelson Reyes Granados', position: 'Inter-Greek Relations Chair', image: '/images/headshots/nelson.jpeg', email: 'vbe7vm@virginia.edu', phone: null },
   { name: 'Peter Kratz', position: 'Sexual Assault Prevention and Health Education', image: '/images/headshots/kratz.png', email: 'xst9cb@virginia.edu', phone: null },
-  { name: 'Ryan Dadoo', position: 'Community Service Chair', image: '/images/headshots/dadoo.png', email: 'jhg9kf@virginia.edu', phone: null },
 ];
