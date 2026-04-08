@@ -82,7 +82,7 @@ export const chapterContent = {
       { label: 'Philanthropy', value: 'UVA Childrens Hospital' },
       { label: 'Chapter Size as of Spring 2026', value: '96' },
       { label: 'Date founded at University of Virginia', value: '1855' },
-      { label: 'President', value: 'Ben Marks' },
+      { label: 'President', value: 'Ben Marks', href: 'mailto:kbv7gf@virginia.edu' },
     ],
     paragraphs: [
       'Founded in 1839, Beta Theta Pi upholds the ideals of lifelong friendship, dedication to leadership, devotion to academic excellence, commitment to community service and high standards of personal conduct, as declared by our Men of Principle Initiative.',
@@ -90,7 +90,7 @@ export const chapterContent = {
       'Members hold high degrees of campus leadership, dedicate countless hours to philanthropic service, hold positions on club athletics, and participate in a boundless array of other extracurricular activities. Brothers of Beta Theta Pi at UVA strive to be well-rounded and high-achieving members in all that they do, inside the fraternity and out.',
     ],
     links: [
-      { label: 'Chapter Website', href: 'http://www.virginiabeta.org/' },
+      { label: 'Chapter Website', href: 'https://aig.uvaalumni.org/beta/' },
       { label: 'National Website', href: 'http://www.betathetapi.org/' },
     ],
   },
@@ -98,7 +98,7 @@ export const chapterContent = {
     subtitle: 'Alpha Mu Chapter',
     image: null,
     details: [
-      { label: 'Rush Chairs', value: 'Collin Hennessey (fcb8cn@virginia.edu) and Parker Glass (zyh3zx@virginia.edu)' },
+      { label: 'Rush Chairs', value: 'Collin Hennessey and Parker Glass', href: 'mailto:fcb8cn@virginia.edu)' },
       { label: 'Philanthropy Chair', value: 'Corey Lin', href: 'mailto:qqc3ac@virginia.edu' },
       { label: 'Philanthropy', value: 'The Jimmy V Foundation for Cancer Research' },
       { label: 'Chapter Size as of Spring 2026', value: '78' },
@@ -140,13 +140,13 @@ export const chapterContent = {
     subtitle: 'Beta Chapter',
     image: null,
     details: [
-      { label: 'Rush Chairs', value: 'Owen Cummings (rty2nu@virginia.edu) and Liam Wright (udz4sj@virginia.edu)' },
+      { label: 'Rush Chairs', value: 'Owen Cummings and Liam Wright', href: 'mailto:rty2nu@virginia.edu'},
       { label: 'Philanthropy Chair', value: 'Hanes Malin', href: 'mailto:peh8cx@virginia.edu' },
       { label: 'Philanthropy', value: 'One Love & Ducks Unlimited' },
       { label: 'Alumni Chair', value: 'Clark Watta', href: 'mailto:abt2yb@virginia.edu' },
       { label: 'Chapter Size as of Spring 2026', value: '88' },
       { label: 'Date founded at University of Virginia', value: '1868' },
-      { label: 'President', value: 'Jack Ghegan' },
+      { label: 'President', value: 'Jack Ghegan', href: 'mailto:pjf7fr@virginia.edu'},
     ],
     paragraphs: [
       'Zete\'s UVA chapter was founded in 1868. The Zete house is located at 169 Rugby Road. After a successful 2026 spring recruitment season, Zete welcomed in 19 new members, making the total roster 88 current active members.',
