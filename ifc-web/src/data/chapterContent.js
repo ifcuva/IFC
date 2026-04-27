@@ -42,7 +42,7 @@ export const chapterContent = {
       { label: 'Philanthropy', value: 'UVA Heart Family Fund' },
       { label: 'Philanthropy Chair', value: 'Samuel Bromberg', href: '#' },
       { label: 'Alumni Chair', value: 'William Silver', href: '#' },
-      { label: 'Rush Chairs', value: 'Andrew Zavalkoff and Drew Ginsberg', href: '#' },
+      { label: 'Rush Chairs', value: 'Andrew Zavalkoff and Drew Ginsberg', href: 'mailto:aepiuvarushchair@gmail.com' },
     ],
     paragraphs: [
       'Founded in 1924, the Mu chapter of Alpha Epsilon Pi is committed to academic excellence, improving the community through service and leadership, and creating lifelong friendships. Our brothers have various academic pursuits and are involved in several activities throughout the University and Charlottesville community. We continually achieve high academic standards, maintaining the highest average GPA across all Greek Life for three consecutive semesters. Our philanthropic endeavors raise thousands of dollars each semester. All proceeds go to the UVA Heart Family Fund, a fund established to help meet the financial needs of families with children at the UVA Children\'s Hospital Heart Center.',
