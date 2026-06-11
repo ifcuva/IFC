@@ -23,14 +23,22 @@ export default function RecruitmentPage() {
 
         <div className="recruitment-page__inner">
           <motion.div
-            className="recruitment-page__bubble"
+            className="recruitment-page__signup"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.15 }}
           >
-            <p className="recruitment-page__bubble-text">
-              2026 recruitment has ended. Spring 2027 details will be posted soon.
-            </p>
+            <h2 className="recruitment-page__signup-title">
+              Register for Spring 2027 Rush
+            </h2>
+            <a
+              href="https://uvaifc2027.mycampusdirector2.com/"
+              className="recruitment-page__signup-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sign up here
+            </a>
           </motion.div>
 
           <motion.section

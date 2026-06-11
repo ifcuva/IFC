@@ -33,25 +33,46 @@
   margin-top: -2rem;
 }
 
-/* Message bubble */
-.recruitment-page__bubble {
+/* Rush registration */
+.recruitment-page__signup {
   background: #fff;
   border-radius: 16px;
   padding: 1.75rem 2rem;
   margin-bottom: 3rem;
   box-shadow: 0 8px 32px rgba(35, 45, 75, 0.12);
   border: 1px solid rgba(35, 45, 75, 0.08);
-}
-
-.recruitment-page__bubble-text {
-  margin: 0;
-  font-size: 1.15rem;
-  line-height: 1.65;
-  color: #1a1a1a;
   text-align: center;
-  font-weight: 500;
 }
 
+.recruitment-page__signup-title {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: var(--uva-blue);
+  letter-spacing: -0.01em;
+}
+
+.recruitment-page__signup-button {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  background: var(--uva-orange);
+  color: var(--uva-blue);
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.recruitment-page__signup-button:hover {
+  background: #d66800;
+  transform: translateY(-1px);
+}
+
+.recruitment-page__signup-button:active {
+  transform: translateY(0);
+}
 /* FAQ section */
 .recruitment-page__faq {
   padding-top: 0.5rem;
@@ -177,15 +198,15 @@
     padding: 0 1rem;
   }
 
-  .recruitment-page__bubble {
+  .recruitment-page__signup {
     padding: 1.5rem 1.25rem;
     margin-bottom: 2.5rem;
   }
 
-  .recruitment-page__bubble-text {
-    font-size: 1.05rem;
+  .recruitment-page__signup-button {
+    width: 100%;
+    max-width: 280px;
   }
-
   .recruitment-page__faq-trigger {
     padding: 1rem 1.25rem;
     font-size: 1rem;
