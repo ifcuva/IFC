@@ -9,7 +9,7 @@ export const recruitmentFaqs = [
     id: 'when-is-recruitment',
     question: 'When does recruitment take place?',
     answer:
-      'The IFC holds official recruitment in the spring semester only. Formal recruitment typically runs at the start of the spring semester, with specific dates and events announced on this site and via university channels. The IFC does not run official recruitment in the fall.',
+      'The IFC holds official recruitment in the spring semester only. Formal recruitment typically runs at the start of the spring semester, with specific dates and events announced on this site and  IFC social media pages. The IFC does not run official recruitment in the fall.',
   },
   {
     id: 'eligibility',
