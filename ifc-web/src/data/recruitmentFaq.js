@@ -21,7 +21,7 @@ export const recruitmentFaqs = [
     id: 'how-to-register',
     question: 'How do I register for recruitment?',
     answer:
-      'Registration is done through the IFC portal. Links and instructions are posted when recruitment opens. You will need your UVA computing ID and basic information. Registration is free and allows you to access events and receive updates from the IFC and chapters.',
+      'Registration is done through the IFC portal. Links and instructions are posted when recruitment opens. You will need your UVA computing ID and basic information. There is a $50 registration fee, which allows you to access events and receive updates from the IFC and chapters. Individuals with extenuating financial circumstances will have the chance to apply for a fee waiver.',
   },
   {
     id: 'what-to-wear',
@@ -45,6 +45,6 @@ export const recruitmentFaqs = [
     id: 'more-info',
     question: 'Where can I get more information?',
     answer:
-      'Visit the Spring 2026 recruitment page for dates and events, explore our chapters to learn about each organization, or reach out to the IFC executive board. Follow @uvaifc on social media for updates and announcements.',
+      'Visit the Spring 2027 recruitment page for dates and events, explore our chapters to learn about each organization, or reach out to the IFC executive board. Follow @uvaifc on social media for updates and announcements.',
   },
 ];
