@@ -6,7 +6,7 @@ export const governingBoardMembers = [
   { name: 'Alex Peskin', position: 'President', image: '/images/headshots/pesk.png', email: 'hht5np@virginia.edu', phone: null },
   { name: 'Andrew Escobar', position: 'VP for Judiciary', image: '/images/headshots/andrewescobar.png', email: 'axn4jw@virginia.edu', phone: null },
   { name: 'David Gosik', position: 'VP Admin', image: '/images/headshots/davidgosik.png', email: 'kjf7qz@virginia.edu', phone: null },
-  { name: 'Jack Copeland', position: 'VP of Membership', image: '/images/headshots/jackcopeland.jpg', email: 'jfx6nx@virginia.edu', phone: null },
+  { name: 'Jack Copeland', position: 'VP of Membership', image: '/images/headshots/jackcopeland.jpg', email: 'ifcvicepresidentofmembership@gmail.com', phone: null },
   { name: 'Tejus Lakshminarayan', position: 'VP of Risk Management', image: '/images/headshots/tejus.png', email: 'gpx5mq@virginia.edu', phone: null },
   { name: 'Justin Diamond', position: 'Public Relations Chair', image: '/images/headshots/justindiamond.jpeg', email: 'pyb4xe@virginia.edu', phone: null },
   { name: 'Henry Anderson', position: 'Membership Education and Scholarship Chair', image: '/images/headshots/henry.png', email: 'egc9bw@virginia.edu', phone: null },

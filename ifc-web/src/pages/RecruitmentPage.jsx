@@ -98,6 +98,13 @@ export default function RecruitmentPage() {
                 </motion.article>
               ))}
             </div>
+            <p className="recruitment-page__contact">
+              You can also seek more details from our VP of Membership, Jack Copeland, at{' '}
+              <a href="mailto:ifcvicepresidentofmembership@gmail.com">
+                ifcvicepresidentofmembership@gmail.com
+              </a>
+              .
+            </p>
           </motion.section>
         </div>
       </main>

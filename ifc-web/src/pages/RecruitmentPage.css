@@ -187,6 +187,23 @@
   padding-right: 1.5rem;
 }
 
+.recruitment-page__contact {
+  margin: 1.75rem 0 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #1a1a1a;
+}
+
+.recruitment-page__contact a {
+  color: #e57200;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.recruitment-page__contact a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 520px) {
   .recruitment-page__hero {
     min-height: 35vh;

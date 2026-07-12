@@ -158,6 +158,23 @@
   padding-bottom: 1.5rem;
 }
 
+.recruitment-faq-page__contact {
+  margin: 1.75rem 0 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #5c6478;
+}
+
+.recruitment-faq-page__contact a {
+  color: #e57200;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.recruitment-faq-page__contact a:hover {
+  text-decoration: underline;
+}
+
 /* CTA */
 .recruitment-faq-page__cta {
   margin-top: 3rem;
