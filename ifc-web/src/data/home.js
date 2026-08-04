@@ -25,6 +25,12 @@ export const welcomeBlocks = [
   `We welcome you to become part of a community of leaders, athletes, activists, and scholars who have shaped the University of Virginia since 1851. Being a part of Greek life affords you an opportunity to enhance your university experience as well as be a part of a system that empowers you to better yourself and make a lasting impact on the community.`,
 ];
 
+export const rushCta = {
+  headline: 'Spring 2027 Rush Registration is open!',
+  buttonLabel: 'Learn more',
+  href: '/recruitment',
+};
+
 export const mission = {
   statement:
     'Committed to fostering brotherhood, leadership, and academic excellence, the Inter-Fraternity Council at the University of Virginia provides vital support and resources to our fraternity chapters. Through collaboration with ISC, MGC, and NPHC, we cultivate a culture of integrity, service, and community engagement—empowering our members to thrive personally and professionally and to contribute to a legacy that has shaped UVA since 1851.',
