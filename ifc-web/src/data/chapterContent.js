@@ -36,7 +36,7 @@ export const chapterContent = {
     subtitle: 'Mu Chapter',
     image: null,
     details: [
-      { label: 'President', value: 'Zachary Minkin', href: '#' },
+      { label: 'President', value: 'Zachary Minkin', href: 'mailto:zhg7ep@virginia.edu' },
       { label: 'Date founded at University of Virginia', value: 'November 29, 1924' },
       { label: 'Chapter Size as of Spring 2026', value: '70' },
       { label: 'Philanthropy', value: 'UVA Heart Family Fund' },
