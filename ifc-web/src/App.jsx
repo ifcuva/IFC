@@ -8,6 +8,7 @@ import IFCJCPage from './pages/IFCJCPage';
 import GoverningBoardPage from './pages/GoverningBoardPage';
 import PublicReleasesPage from './pages/PublicReleasesPage';
 import ScholarshipsPage from './pages/ScholarshipsPage';
+import SponsorshipsPage from './pages/SponsorshipsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
 
@@ -39,7 +40,9 @@ export default function App() {
       <Route path="/scholarships" element={<ScholarshipsPage />} />
       <Route path="/scholarships/scholarship" element={<Navigate to="/scholarships#scholarship" replace />} />
       <Route path="/scholarships/quentin-alcorn" element={<Navigate to="/scholarships#quentin-alcorn" replace />} />
-      <Route path="/scholarships/funding-requests" element={<Navigate to="/scholarships#funding-requests" replace />} />
+      <Route path="/sponsorships" element={<SponsorshipsPage />} />
+      <Route path="/scholarships/funding-requests" element={<Navigate to="/sponsorships" replace />} />
+      <Route path="/funding-requests" element={<Navigate to="/sponsorships" replace />} />
       <Route path="/ifc-jc/standards-boards" element={<Navigate to="/ifc-jc" replace />} />
       <Route path="/ifc-jc/complaint-form" element={<Navigate to="/ifc-jc" replace />} />
       <Route path="*" element={<NotFoundPage />} />

@@ -21,7 +21,11 @@ export const navItems = [
     ],
   },
   {
-    label: 'Scholarships and Sponsorships',
+    label: 'Scholarships & Sponsorships',
     href: '/scholarships',
+    children: [
+      { label: 'Scholarships', href: '/scholarships' },
+      { label: 'Sponsorships', href: '/sponsorships' },
+    ],
   },
 ];
