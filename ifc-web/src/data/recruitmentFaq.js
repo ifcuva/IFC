@@ -24,6 +24,12 @@ export const recruitmentFaqs = [
       'Registration is done through the IFC portal. Links and instructions are posted when recruitment opens. You will need your UVA computing ID and basic information. There is a $50 registration fee, which allows you to access events and receive updates from the IFC and chapters. Individuals with extenuating financial circumstances will have the chance to apply for a fee waiver.',
   },
   {
+    id: 'rush-fee-waiver',
+    question: 'What if I am unable to pay the $50 rush fee?',
+    answer: "If you can't pay the rush fee, you can apply to get the $50 waived using this form:",
+    link: 'https://forms.gle/XsYS7aNhqtKP5JwaA',
+  },
+  {
     id: 'what-to-wear',
     question: 'What should I wear to recruitment events?',
     answer:

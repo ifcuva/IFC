@@ -77,7 +77,17 @@ export default function RecruitmentFaqPage() {
                       role="region"
                       aria-labelledby={`faq-question-${faq.id}`}
                     >
-                      <div className="faq-item__answer">{faq.answer}</div>
+                      <div className="faq-item__answer">
+                        {faq.answer}
+                        {faq.link && (
+                          <>
+                            {' '}
+                            <a href={faq.link} target="_blank" rel="noopener noreferrer">
+                              {faq.link}
+                            </a>
+                          </>
+                        )}
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
