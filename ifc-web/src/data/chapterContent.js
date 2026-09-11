@@ -57,13 +57,13 @@ export const chapterContent = {
     subtitle: 'Delta Chapter',
     image: null,
     details: [
-      { label: 'Rush Chairs', value: 'Landon Jones and Andrew Spinnanger', href: 'mailto:Landon.s.jones06@gmail.com' },
-      { label: 'Alumni Chair', value: 'Jag Fitzsimmons', href: 'mailto:fitzsimmonsjag@gmail.com' },
-      { label: 'Philanthropy Chair', value: 'Justin Kim', href: 'mailto:justinsolkimmy@gmail.com' },
+      { label: 'Rush Chairs', value: 'Oliver Hayden and Richard Perry', href: 'mailto:qar8cg@virginia.edu,tfs4xf@virginia.edu' },
+      { label: 'Alumni Chair', value: 'Ewan LeJava', href: 'mailto:rem2ey@virginia.edu' },
+      { label: 'Philanthropy Chairs', value: 'Ben King and Xander Beamon', href: 'mailto:cyp9yn@virginia.edu,hcr5kv@virginia.edu' },
       { label: 'Philanthropy', value: 'Taus for Paws with C-A SPCA' },
-      { label: 'Chapter Size as of Spring 2026', value: '30' },
+      { label: 'Chapter Size as of Spring 2026', value: '54' },
       { label: 'Date founded at University of Virginia', value: 'September 11, 1868' },
-      { label: 'President', value: 'Colin Fogarty', href: 'mailto:ank6rs@virginia.edu' },
+      { label: 'President', value: 'Tucker Meeks', href: 'mailto:nte7vz@virginia.edu' },
     ],
     paragraphs: [
       'Founded in 1868, the University of Virginia Delta Chapter is the oldest active chapter nationwide for the Alpha Tau Omega Fraternity. The brothers of the Delta chapter uphold the ideals of leadership, academic excellence, camaraderie, and service. Alpha Tau Omega is the Nation\'s leadership development fraternity. With our newly renovated chapter house, Alpha Tau Omega boasts itself as the fastest growing fraternity chapter on grounds, with over 500% growth since 2023.',
