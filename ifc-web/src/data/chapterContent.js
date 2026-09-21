@@ -28,7 +28,7 @@ export const chapterImages = {
   'Sigma Pi': '/images/chapters/sigma-pi.png',
   'Phi Kappa Psi': '/images/chapters/phi-kappa-psi.png',
   'Phi Society': '/images/chapters/phi-society.png',
-  'Chi Psi': '/images/chapters/chi-psi.png',
+  'Chi Psi': '/images/chapters/chi-psi.jpg',
 };
 
 export const chapterContent = {
@@ -555,13 +555,12 @@ export const chapterContent = {
       { label: 'Alumni Chair', value: 'Daniel Ludwig' },
       { label: 'Philanthropy Chair', value: 'Turner DeShon' },
       { label: 'Philanthropy', value: 'Gordie Center for Substance Abuse Prevention' },
-      { label: 'Chapter Size as of Spring 2020', value: '55' },
+      { label: 'Chapter Size as of Spring 2026', value: '80' },
       { label: 'Date founded at University of Virginia', value: '1860' },
       { label: 'President', value: 'Andrew Williams' },
     ],
     paragraphs: [
-      'Alpha Omicron of Chi Psi exists to build better men, create lasting and meaningful relationships between brothers, and to enhance brother’s college experiences.',
-      'This is done through internal and external social events, as well as philanthropic endeavors within the Charlottesville community.',
+      'Alpha Omicron of Chi Psi is dedicated to forging men of character, fostering lifelong brotherhood, and elevating the university experience for every member. Our chapter brings together brothers from across the nation and around the globe. Our members excel as scholars, leaders, and athletes. Through meaningful community outreach and structured philanthropy, Chi Psi empowers brothers to lead with integrity both on Grounds and beyond.',
     ],
     links: [
       { label: 'National Website', href: 'http://www.chipsi.org/' },
