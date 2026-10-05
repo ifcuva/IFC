@@ -44,7 +44,7 @@ export default function ChaptersPage() {
               <span className="chapters-page__line" aria-hidden="true" />
             </h1>
             <p className="chapters-page__intro">
-              Explore the IFC's 25 chapters
+              Explore the IFC's 27 chapters
             </p>
           </motion.header>
 
@@ -52,21 +52,28 @@ export default function ChaptersPage() {
             <p className="chapters-page__loading">Loading chapters…</p>
           ) : (
             <ul className="chapters-list">
-              {chapters.map((name, i) => (
-                <motion.li
-                  key={name}
-                  className="chapters-list__item"
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: Math.min(i * 0.02, 0.4) }}
-                >
-                  <Link to={`/chapters/${nameToSlug(name)}`} className="chapters-list__link">
-                    <span className="chapters-list__greek">{getGreekForChapter(name)}</span>
-                    <span className="chapters-list__sep">—</span>
-                    <span className="chapters-list__name">{name}</span>
-                  </Link>
-                </motion.li>
-              ))}
+              {chapters.map((name, i) => {
+                const greek = getGreekForChapter(name);
+                return (
+                  <motion.li
+                    key={name}
+                    className="chapters-list__item"
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: Math.min(i * 0.02, 0.4) }}
+                  >
+                    <Link to={`/chapters/${nameToSlug(name)}`} className="chapters-list__link">
+                      {greek !== name && (
+                        <>
+                          <span className="chapters-list__greek">{greek}</span>
+                          <span className="chapters-list__sep">—</span>
+                        </>
+                      )}
+                      <span className="chapters-list__name">{name}</span>
+                    </Link>
+                  </motion.li>
+                );
+              })}
             </ul>
           )}
         </div>

@@ -15,11 +15,13 @@ export const chapterImages = {
   'St. Anthony Hall': '/images/chapters/st-anthony-hall.png',
   'Theta Delta Chi': '/images/chapters/theta-delta-chi.png',
   'Pi Kappa Phi': '/images/chapters/pi-kappa-phi.png',
+  'Kappa Alpha Order': '/images/chapters/kappa-alpha-order.jpg',
   'Sigma Alpha Epsilon': '/images/chapters/sigma-alpha-epsilon.png',
   'Sigma Nu': '/images/chapters/sigma-nu.png',
   'Sigma Phi (SERP)': '/images/chapters/sigma-phi.png',
   'Sigma Chi': '/images/chapters/sigma-chi.png',
   'Phi Delta Theta': '/images/chapters/phi-delta-theta.png',
+  'Fiji': '/images/chapters/phi-gamma-delta.jpg',
   'Phi Sigma Kappa': '/images/chapters/phi-sigma-kappa.png',
   'Chi Phi': '/images/chapters/chi-phi.png',
   'Alpha Sigma Phi': '/images/chapters/alpha-sigma-phi.png',
@@ -564,6 +566,26 @@ export const chapterContent = {
     ],
     links: [
       { label: 'National Website', href: 'http://www.chipsi.org/' },
+    ],
+  },
+  'Kappa Alpha Order': {
+    image: null,
+    details: [],
+    paragraphs: [
+      'Kappa Alpha Order is located at 600 Rugby Road. Additional chapter information is coming soon.',
+    ],
+    links: [
+      { label: 'National Website', href: 'https://www.kappaalphaorder.org/' },
+    ],
+  },
+  'Fiji': {
+    image: null,
+    details: [],
+    paragraphs: [
+      'Fiji is located at 128 Madison Lane. Additional chapter information is coming soon.',
+    ],
+    links: [
+      { label: 'National Website', href: 'https://www.phigam.org/' },
     ],
   },
 };

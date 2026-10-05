@@ -5,7 +5,7 @@
 const CHAPTER_NAMES = [
   'Alpha Epsilon Pi', 'Alpha Tau Omega', 'Beta Theta Pi',
   'Chi Phi', 'Chi Psi', 'Delta Kappa Epsilon', 'Delta Sigma Phi', 'Delta Upsilon',
-  'Phi Delta Theta', 'Phi Kappa Psi', 'Phi Sigma Kappa', 'Phi Society',
+  'Fiji', 'Kappa Alpha Order', 'Phi Delta Theta', 'Phi Kappa Psi', 'Phi Sigma Kappa', 'Phi Society',
   'Pi Kappa Phi', 'Pi Lambda Phi', 'Sigma Alpha Epsilon', 'Sigma Alpha Mu',
   'Sigma Chi', 'Sigma Nu', 'Sigma Phi (SERP)', 'Sigma Pi',
   'St. Anthony Hall', 'St. Elmo Hall', 'Theta Chi', 'Theta Delta Chi', 'Zeta Psi',

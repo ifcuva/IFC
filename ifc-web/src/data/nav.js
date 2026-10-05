@@ -4,6 +4,10 @@ export const navItems = [
   {
     label: 'Chapters',
     href: '/chapters',
+    children: [
+      { label: 'Chapter List', href: '/chapters' },
+      { label: 'Chapter Map', href: '/chapters/map' },
+    ],
   },
   {
     label: 'Recruitment',
