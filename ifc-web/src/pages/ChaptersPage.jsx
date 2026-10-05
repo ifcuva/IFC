@@ -47,7 +47,7 @@ export default function ChaptersPage() {
               <ul className="chapters-list">
                 {chapters.map((name) => {
                   const greek = getGreekForChapter(name);
-                  const hasGreekName = greek !== name;
+                  const hasGreekName = greek !== name || name === 'Fiji';
                   return (
                     <li key={name} className="chapters-list__item">
                       <Link to={`/chapters/${nameToSlug(name)}`} className="chapters-list__link">

@@ -8,6 +8,7 @@ export const chapterGreek = {
   'Delta Kappa Epsilon': 'ΔΚΕ',
   'Delta Sigma Phi': 'ΔΣΦ',
   'Delta Upsilon': 'ΔΥ',
+  'Fiji': 'Fiji',
   'Kappa Alpha Order': 'ΚΑ',
   'Phi Delta Theta': 'ΦΔΘ',
   'Phi Kappa Psi': 'ΦΚΨ',
