@@ -1,6 +1,6 @@
 // Scholarship chapter info – OneDrive spreadsheet with chapter-level scholarship details
 export const CHAPTER_SCHOLARSHIP_INFO_URL =
-  'https://onedrive.live.com/:x:/g/personal/7da4d99c74d395ec/IQCpBXln1qGpRYC-akJ8h_sYAYu3U5wd8QkPNK-znmh-tL0?rtime=-S9iacJ33kg&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy83ZGE0ZDk5Yzc0ZDM5NWVjL0lRQ3BCWGxuMXFHcFJZQy1ha0o4aF9zWUFZdTNVNXdkOFFrUE5LLXpubWgtdEwwP2U9NWRocGQ0JndkTE9SPWM3NjcxM0ZFQS00QUY0LTg3NEEtODcxNy0zMjA4OEQ3Q0NBMEEmT1I9T3V0bG9vaw';
+  'https://1drv.ms/x/c/7da4d99c74d395ec/IQCpBXln1qGpRYC-akJ8h_sYAU1YqhwSIgM7I8ydg90Yvow?e=v9d9VJ';
 
 export const SCHOLARSHIP_CHAIR = {
   name: 'Henry Anderson',
