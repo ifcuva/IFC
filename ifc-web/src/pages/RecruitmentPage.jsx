@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { rushCta } from '../data/home';
 import { recruitmentFaqs } from '../data/recruitmentFaq';
 import './RecruitmentPage.css';
 
@@ -25,6 +26,15 @@ export default function RecruitmentPage() {
                 <h2 id="registration-title" className="recruitment-page__registration-title">
                   Register for Spring 2027 Rush
                 </h2>
+                <p className="recruitment-page__early-bird-label">Early bird registration</p>
+                <div className="recruitment-page__price">
+                  <span className="recruitment-page__regular-price">{rushCta.regularPrice}</span>
+                  <strong>{rushCta.earlyBirdPrice}</strong>
+                </div>
+                <p className="recruitment-page__deadline">
+                  Register by {rushCta.earlyBirdDeadline}. Price increases to{' '}
+                  {rushCta.regularPrice} on {rushCta.earlyBirdDeadline}.
+                </p>
               </div>
               <a
                 href="https://uvaifc2027.mycampusdirector2.com/"

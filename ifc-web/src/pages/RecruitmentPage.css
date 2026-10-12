@@ -55,6 +55,46 @@
   color: var(--uva-blue);
 }
 
+.recruitment-page__early-bird-label {
+  margin: 1.25rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--uva-orange);
+}
+
+.recruitment-page__price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 0.25rem;
+}
+
+.recruitment-page__price strong {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: clamp(2.75rem, 6vw, 4.25rem);
+  line-height: 1;
+  font-weight: 700;
+  color: var(--uva-orange);
+}
+
+.recruitment-page__regular-price {
+  font-size: 1.45rem;
+  color: #7b8190;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.recruitment-page__deadline {
+  max-width: 450px;
+  margin: 0.7rem auto 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #343946;
+}
+
 .recruitment-page__signup-button {
   display: inline-block;
   flex: 0 0 auto;

@@ -16,6 +16,14 @@ export default function RushCta() {
       <div className="rush-cta__inner">
         <p className="rush-cta__eyebrow">Recruitment</p>
         <p className="rush-cta__headline">{rushCta.headline}</p>
+        <div className="rush-cta__offer" aria-label={`Early bird registration is ${rushCta.earlyBirdPrice}`}>
+          <span className="rush-cta__price">{rushCta.earlyBirdPrice}</span>
+          <span className="rush-cta__offer-copy">
+            <strong>Early bird registration</strong>
+            Register by {rushCta.earlyBirdDeadline}. Price increases to{' '}
+            {rushCta.regularPrice} on {rushCta.earlyBirdDeadline}.
+          </span>
+        </div>
         <Link to={rushCta.href} className="rush-cta__link">
           {`${rushCta.buttonLabel} →`}
         </Link>

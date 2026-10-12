@@ -27,6 +27,9 @@ export const welcomeBlocks = [
 
 export const rushCta = {
   headline: 'Spring 2027 Rush Registration is open!',
+  earlyBirdPrice: '$50',
+  regularPrice: '$60',
+  earlyBirdDeadline: 'November 1',
   buttonLabel: 'Learn more',
   href: '/recruitment',
 };

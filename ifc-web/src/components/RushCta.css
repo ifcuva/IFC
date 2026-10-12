@@ -21,7 +21,7 @@
 }
 
 .rush-cta__headline {
-  margin: 0 0 1.1rem;
+  margin: 0 0 1.25rem;
   font-family: 'Libre Caslon Text', serif;
   font-size: clamp(1.35rem, 3vw, 1.75rem);
   font-weight: 400;
@@ -31,8 +31,41 @@
   color: var(--uva-blue);
 }
 
+.rush-cta__offer {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.25rem;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid rgba(35, 45, 75, 0.14);
+  border-radius: 8px;
+  background: #f5f7fb;
+  color: var(--uva-blue);
+  text-align: left;
+}
+
+.rush-cta__price {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  line-height: 1;
+  color: var(--uva-orange);
+}
+
+.rush-cta__offer-copy {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.rush-cta__offer-copy strong {
+  font-size: 0.95rem;
+}
+
 .rush-cta__link {
-  display: inline;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
   font-family: inherit;
   font-size: 0.95rem;
   font-weight: 600;
@@ -50,5 +83,9 @@
 @media (max-width: 640px) {
   .rush-cta {
     padding: 2.5rem 1.25rem 2rem;
+  }
+
+  .rush-cta__offer {
+    align-items: flex-start;
   }
 }
