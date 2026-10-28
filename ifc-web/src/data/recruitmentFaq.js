@@ -48,6 +48,12 @@ export const recruitmentFaqs = [
       'Costs vary by chapter and typically include dues, initiation fees, and sometimes housing if you live in the chapter house. Financial aid and payment plans are often available. Ask chapters directly during recruitment about their specific fee structure and scholarship opportunities.',
   },
   {
+    id: 'registration-refunds',
+    question: 'What if I accidentally register for rush?',
+    answer:
+      'Rush registration purchases are final and nonrefundable. Refunds will not be issued for accidental registrations.',
+  },
+  {
     id: 'more-info',
     question: 'Where can I get more information?',
     answer:
