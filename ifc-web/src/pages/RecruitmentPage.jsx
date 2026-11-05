@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import RegistrationCountdown from '../components/RegistrationCountdown';
 import { recruitmentFaqs } from '../data/recruitmentFaq';
 import './RecruitmentPage.css';
 
@@ -37,6 +38,7 @@ export default function RecruitmentPage() {
             </div>
 
             <p className="recruitment-page__dates">January 23–February 6, 2027</p>
+            <RegistrationCountdown />
           </div>
         </section>
 

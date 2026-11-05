@@ -31,6 +31,11 @@
   color: var(--uva-blue);
 }
 
+.rush-cta .registration-countdown {
+  max-width: 430px;
+  margin: 0 auto 1.4rem;
+}
+
 .rush-cta__link {
   display: block;
   width: fit-content;

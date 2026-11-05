@@ -1,0 +1,92 @@
+.registration-countdown {
+  width: 100%;
+  text-align: center;
+}
+
+.registration-countdown__deadline {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.registration-countdown__units {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.45rem, 2vw, 0.8rem);
+}
+
+.registration-countdown__unit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: clamp(3.75rem, 12vw, 4.75rem);
+  min-height: 4.35rem;
+  border-radius: 8px;
+}
+
+.registration-countdown__value {
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.35rem, 4vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.registration-countdown__label {
+  margin-top: 0.25rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.registration-countdown--light .registration-countdown__deadline {
+  color: var(--uva-blue);
+}
+
+.registration-countdown--light .registration-countdown__unit {
+  background: #fff;
+  border: 1px solid rgba(35, 45, 75, 0.12);
+  box-shadow: 0 4px 14px rgba(35, 45, 75, 0.06);
+}
+
+.registration-countdown--light .registration-countdown__value {
+  color: var(--uva-blue);
+}
+
+.registration-countdown--light .registration-countdown__label {
+  color: var(--text-muted);
+}
+
+.registration-countdown--subtle .registration-countdown__deadline {
+  color: var(--uva-blue);
+}
+
+.registration-countdown--subtle .registration-countdown__unit {
+  background: var(--bg-subtle);
+  border: 1px solid rgba(35, 45, 75, 0.1);
+}
+
+.registration-countdown--subtle .registration-countdown__value {
+  color: var(--uva-orange);
+}
+
+.registration-countdown--subtle .registration-countdown__label {
+  color: var(--text-muted);
+}
+
+@media (max-width: 420px) {
+  .registration-countdown__units {
+    gap: 0.35rem;
+  }
+
+  .registration-countdown__unit {
+    width: calc((100% - 1.05rem) / 4);
+    min-height: 3.9rem;
+  }
+
+  .registration-countdown__label {
+    font-size: 0.58rem;
+    letter-spacing: 0.05em;
+  }
+}

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { rushCta } from '../data/home';
+import RegistrationCountdown from './RegistrationCountdown';
 import './RushCta.css';
 
 export default function RushCta() {
@@ -16,6 +17,7 @@ export default function RushCta() {
       <div className="rush-cta__inner">
         <p className="rush-cta__eyebrow">Recruitment</p>
         <p className="rush-cta__headline">{rushCta.headline}</p>
+        <RegistrationCountdown theme="subtle" />
         <Link to={rushCta.href} className="rush-cta__link">
           {`${rushCta.buttonLabel} →`}
         </Link>
